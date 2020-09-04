@@ -1,0 +1,434 @@
+﻿{% extends 'blog/base.html' %}
+{% load static %}
+	<!-- Video Model Start -->
+	<div class="modal vd_mdl fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-body">
+					<iframe  src="https://www.youtube.coeter; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- Video Model End -->
+	<!-- Header Start -->
+	  
+	<!-- Header End -->
+	<!-- Left Sidebar Start -->
+	<nav class="vertical_nav">
+		<div class="left_section menu_left" id="js-menu" >
+			<div class="left_section">
+				<ul>
+					<li class="menu--item">
+						<a href="index.html" class="menu--link active" title="Home">
+							<i class='uil uil-home-alt menu--icon'></i>
+							<span class="menu--label">Home</span>
+						</a>
+					</li>
+					<li class="menu--item">
+						<a href="live_streams.html" class="menu--link" title="Live Streams">
+							<i class='uil uil-kayak menu--icon'></i>
+							<span class="menu--label">Live Streams</span>
+						</a>
+					</li>
+				
+						
+							<li class="sub_menu--item">
+								<a href="#" class="sub_menu--link">Photography</a>
+							</li>
+							<li class="sub_menu--item">
+								<a href="#" class="sub_menu--link">Health & Fitness</a>
+							</li>
+							<li class="sub_menu--item">
+								<a href="#" class="sub_menu--link">Music</a>
+							</li>
+							<li class="sub_menu--item">
+								<a href="#" class="sub_menu--link">Teaching & Academics</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu--item  menu--item__has_sub_menu">
+						<label class="menu--link" title="Tests">
+						  <i class='uil uil-clipboard-alt menu--icon'></i>
+						  <span class="menu--label">Tests</span>
+						</label>
+						<ul class="sub_menu">
+							
+							<li class="sub_menu--item">
+								<a href="http://www.gambolthemes.net/html-items/edututs+/Instructor_Dashboard/my_certificates.html" class="sub_menu--link">My Certification</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="menu--item  menu--item__has_sub_menu">
+						<label class="menu--link" title="Pages">
+						  <i class='uil uil-file menu--icon'></i>
+						  <span class="menu--label">Pages</span>
+						</label>
+						<ul class="sub_menu">
+						
+						
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="left_section">
+				<h6 class="left_title">SUBSCRIPTIONS</h6>
+				
+			</div>
+			<div class="left_section pt-2">
+				<ul>
+			
+				</ul>
+			</div>
+			
+				<div class="left_footer_content">
+					<p>© 2020 <strong>Cursus</strong>. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</nav>
+    <!-- Left Sidebar End -->
+    {% block content %}
+
+	<!-- Body Start -->
+	<div class="wrapper _bg4586">
+		<div class="_215b01">
+			<div class="container-fluid">			
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section3125">							
+							<div class="row justify-content-center">						
+								<div class="col-xl-4 col-lg-5 col-md-6">						
+									<div class="preview_video">						
+										<a href="#" class="fcrse_img" data-toggle="modal" data-target="#videoModal">
+											<img src="images/courses/img-2.jpg" alt="">
+											<div class="course-overlay">
+												<div class="badge_seller">View</div>
+												<span class="play_btn1"><i class="uil uil-play"></i></span>
+												<span class="_215b02">Preview this course</span>
+											</div>
+										</a>
+									</div>
+									<div class="_215b10">										
+										<a href="#" class="_215b11">										
+											<span><i class="uil uil-heart"></i></span>Save
+										</a>
+										<a href="#" class="_215b12">										
+											<span><i class="uil uil-windsock"></i></span>Report abuse
+										</a>
+									</div>
+								</div>
+								<div class="col-xl-8 col-lg-7 col-md-6">
+									<div class="_215b03">
+										<h2>{{object.Course_Title}}</h2>
+										<span class="_215b04">{{object.Course_Subtitle}}!</span>
+									</div>
+									<div class="_215b05">
+										<div class="crse_reviews mr-2">
+											<i class="uil uil-star"></i> {{object.rating}}
+										</div>
+									
+									</div>
+									<!-- <div class="_215b05">										
+										114,521 students enrolled
+									</div> -->
+									<div class="_215b06">										
+										<div class="_215b07">										
+											<span><i class='uil uil-comment'></i></span>
+											{{object.Language}}
+										</div>
+										<div class="_215b08">										
+											<span><i class='uil uil-closed-captioning'></i></span>
+											<span>English, Dutch
+												
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="_215b05">										
+										{{object.date}}
+									</div>
+									<ul class="_215b31">										
+										<li><a href="{{object.errol}}"><button class="btn_adcart">Errol</button></a></li>
+										<li><button class="btn_buy">Free</button></li>
+									</ul>
+									<div class="_215fgt1">										
+										100% free course
+									</div>
+								</div>							
+							</div>							
+						</div>							
+					</div>															
+				</div>
+			</div>
+		</div>
+		<div class="_215b15 _byt1458">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="user_dt5">
+							<div class="user_dt_left">
+								<div class="live_user_dt">
+									<div class="user_img5">
+										<a href="#"><img src="{%static 'front/images/left-imgs/img-1.jpg'%}" alt=""></a>												
+									</div>
+									<div class="user_cntnt">
+										<a href="#" class="_df7852">{{object.instructor_name}}</a>
+										<button class="subscribe-btn">Subscribe</button>
+									</div>
+								</div>
+							</div>
+							<div class="user_dt_right">
+								<ul>
+									<li>
+										<a href="#" class="lkcm152"><i class="uil uil-eye"></i><span>1452</span></a>
+									</li>
+									<li>
+										<a href="#" class="lkcm152"><i class="uil uil-thumbs-up"></i><span>100</span></a>
+									</li>
+									<li>
+										<a href="#" class="lkcm152"><i class="uil uil-thumbs-down"></i><span>20</span></a>
+									</li>
+									<li>
+										<a href="#" class="lkcm152"><i class="uil uil-share-alt"></i><span>9</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="course_tabs">
+							<nav>
+								<div class="nav nav-tabs tab_crse justify-content-center" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-selected="true">About</a>
+									<a class="nav-item nav-link" id="nav-courses-tab" data-toggle="tab" href="#nav-courses" role="tab" aria-selected="false">Courses Content</a>
+								</div>
+							</nav>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="_215b17">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="course_tab_content">
+							<div class="tab-content" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="nav-about" role="tabpanel">
+									<div class="_htg451">
+										<div class="_htg452">
+											<h3>Requirements</h3>
+											<ul>
+												<li><span class="_5f7g11">{{course.Requirement_1}}</span></li>
+												<li><span class="_5f7g11">{{course.Requirement_2}}</span></li>
+												<li><span class="_5f7g11">{{course.Requirement_3}}</span></li>
+											</ul>
+										</div>
+										<div class="_htg452 mt-35">
+											<h3>Description</h3>
+										
+											<h4>Hi! Welcome to {{object.Course_Title }} </h4>
+											<ul class="_abc124">
+												
+										   <h5>{{object.Description}}</h5>
+								           
+										</div>
+										
+										<div class="_htgdrt mt-35">
+											<h3>What you'll learn</h3>
+											<div class="_scd123">
+												<div class="row">
+													<div class="col-lg-6">
+														<ul class="_htg452 _abcd145">												
+															<li><div class="_5f7g15"><i class="fas fa-check-circle"></i><span>{{course.What_you_ll_learn_1}}.</span></div></li>
+															<li><div class="_5f7g15"><i class="fas fa-check-circle"></i><span>{{course.What_you_ll_learn_2}}.</span></div></li>
+														
+														
+														</ul>
+													</div>
+													<div class="col-lg-6">
+														<ul class="_htg452 _abcd145">
+															<li><div class="_5f7g15"><i class="fas fa-check-circle"></i><span>{{course.What_you_ll_learn_3}}.</span></div></li>
+										
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>							
+									</div>							
+								</div>
+								<div class="tab-pane fade" id="nav-courses" role="tabpanel">
+									<div class="crse_content">
+										
+											
+											<a href="javascript:void(0)" class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all">												
+												<div class="section-header-left">
+													<span class="section-title-wrapper">
+														<i class='uil uil-presentation-play crse_icon'></i>
+													
+											<a href="javascript:void(0)" class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all">												
+												<div class="section-header-left">
+													<span class="section-title-wrapper">
+														<i class='uil uil-presentation-play crse_icon'></i>
+														<span class="section-title-text">not available here</span>
+													</span>
+												</div>
+												<div class="section-header-right">
+													<span class="num-items-in-section">12 lectures</span>
+													<span class="section-header-length">56:21</span>
+												</div>
+											</a>
+											<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">04.41</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">02:22</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">13:22</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-file icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">03:21</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">06:15</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">02:33</span>
+													</div>
+												</div>												
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">05:12</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">04:28</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">01:55</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">04:45</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">01:10</span>
+													</div>
+												</div>
+												<div class="lecture-container">
+													<div class="left-content">
+														<i class='uil uil-play-circle icon_142'></i>
+														<div class="top">
+															<div class="title">not available here</div>
+														</div>
+													</div>
+													<div class="details">
+														<span class="content-summary">04:01</span>
+													</div>
+												</div>												
+											</div>											
+										</div>
+										<a class="btn1458" href="#">Preview</a>
+									</div>
+								</div>
+								
+						</div>
+				</div>
+			</div>
+		</div>
+
+					
+				
+	<!-- Body End -->
+
+
+    {% endblock content %}
