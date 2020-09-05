@@ -1,12 +1,12 @@
 /* Extra small devices (portrait phones, less than 576px) */
- @media (max-width: 575.98px) {
+ @media (max-width: 50px) {
 .main_logo {
     margin-left: 5px !important;
 	width: 110px !important;
 }
 
 .search120 {
-    display: none;
+    display: block;
     margin-left: 0 !important;
 }
 

@@ -11,9 +11,7 @@
 		<meta name="description" content="Gambolthemes">
 		<meta name="author" content="Gambolthemes">		
 	
-		<title>{% block title %}
-		  
-		{% endblock title %}</title>
+		<title>{% block title %} {% endblock title %}</title>
 
 		<!-- Favicon Icon -->
 		<!-- <link rel="icon" type="image/png" href=" {%static 'front/images/left-imgs/famous.jpg'%}"> -->
@@ -167,6 +165,10 @@
 							</div>
 							<!-- <a href="my_instructor_profile_view.html" class="dp_link_12">View Instructor Profile</a>						 -->
 						</div>
+						<a href="{%url 'home'%}" class="menu--link active" title="Home">
+							<i class='uil uil-home-alt menu--icon'></i>
+							<span class="">Home</span>
+						</a>
 						<div class="night_mode_switch__btn">
 							<a href="#" id="night-mode" class="btn-night-mode">
 								<i class="uil uil-moon"></i> Night mode
@@ -175,15 +177,29 @@
 								</span>
 							</a>
 						</div>
+						
 				        
 						<a href="#" class="item channel_item">Setting</a>
 						<a href="#" class="item channel_item">Help</a>
 						<a href="#" class="item channel_item">Send Feedback</a>
+                        
 						
 						{% if user.is_authenticated %}
-						 <a href="{%url 'logout'%}" class="item channel_item">Sign Out</a>
+						<a href="{%url 'logout'%}" class="item channel_item">Logout</a>
+						<a href="{%url 'profile'%}" class="item channel_item">My profile</a>
+						<a href="{%url 'post-create'%}" class="item channel_item" title="Create New Course">Create New Course</a>
+					
+
+						{% else %}
+						
+							<a href="{%url 'login'%}" class="item channel_item">Sign In</a>
+					        
+
 						{% endif %}
-							
+						
+						
+						
+						
 						
 					</div>
 				</li>
@@ -192,14 +208,14 @@
 	</header>
 	<!-- Header End -->
 	<!-- Left Sidebar Start -->
-	<nav class="vertical_nav">
+	<nav class="vertical_nav   navbar-expand-md">
 		<div class="left_section menu_left" id="js-menu" >
 			<div class="left_section">
 				<ul>
 					<li class="menu--item">
 						<a href="{%url 'home'%}" class="menu--link active" title="Home">
 							<i class='uil uil-home-alt menu--icon'></i>
-							<span class="menu--label">Home</span>
+							<span class="">Home</span>
 						</a>
 					</li>
 			
@@ -331,7 +347,7 @@
 												</div>
 											</a>
 										</li>
-										<li>
+										<li class="container">
 											<p>© 2020 <strong>Macaulay Famous</strong>. All Rights Reserved.</p>
 										</li>
 									</ul>
